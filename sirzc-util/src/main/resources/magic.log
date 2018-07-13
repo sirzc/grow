@@ -1,0 +1,45 @@
+
+07-13 18:34:23-us.codecraft.webmagic.Spider.run()
+[INFO]Spider www.jianshu.com started!
+
+07-13 18:34:24-us.codecraft.webmagic.downloader.HttpClientDownloader.download()
+[INFO]downloading page success https://www.jianshu.com/u/adbc18310425
+
+07-13 18:34:24-us.codecraft.webmagic.downloader.HttpClientDownloader.download()
+[INFO]downloading page success https://www.jianshu.com/u/adbc18310425/?order_by=shared_at&page=2
+
+07-13 18:34:24-us.codecraft.webmagic.downloader.HttpClientDownloader.download()
+[INFO]downloading page success https://www.jianshu.com/u/adbc18310425/?order_by=shared_at&page=3
+
+07-13 18:34:25-us.codecraft.webmagic.downloader.HttpClientDownloader.download()
+[INFO]downloading page success https://www.jianshu.com/u/adbc18310425/?order_by=shared_at&page=4
+
+07-13 18:34:25-us.codecraft.webmagic.downloader.HttpClientDownloader.download()
+[INFO]downloading page success https://www.jianshu.com/u/adbc18310425/?order_by=shared_at&page=5
+
+07-13 18:34:26-us.codecraft.webmagic.downloader.HttpClientDownloader.download()
+[INFO]downloading page success https://www.jianshu.com/u/adbc18310425/?order_by=shared_at&page=6
+
+07-13 18:34:26-us.codecraft.webmagic.downloader.HttpClientDownloader.download()
+[INFO]downloading page success https://www.jianshu.com/u/adbc18310425/?order_by=shared_at&page=7
+
+07-13 18:34:26-us.codecraft.webmagic.downloader.HttpClientDownloader.download()
+[INFO]downloading page success https://www.jianshu.com/u/adbc18310425/?order_by=shared_at&page=8
+
+07-13 18:34:46-us.codecraft.webmagic.Spider.run()
+[INFO]Spider blog.sina.com.cn started!
+
+07-13 18:34:46-us.codecraft.webmagic.downloader.HttpClientDownloader.download()
+[INFO]downloading page success http://blog.sina.com.cn/s/blog_6a978c5a0100lrf6.html
+
+07-13 18:34:46-us.codecraft.webmagic.Spider.run()
+[INFO]Spider blog.sina.com.cn closed! 1 pages downloaded.
+
+07-13 18:42:08-us.codecraft.webmagic.Spider.run()
+[INFO]Spider blog.sina.com.cn started!
+
+07-13 18:42:08-us.codecraft.webmagic.downloader.HttpClientDownloader.download()
+[INFO]downloading page success http://blog.sina.com.cn/s/blog_6a978c5a0100lrf6.html
+
+07-13 18:42:08-us.codecraft.webmagic.Spider.run()
+[INFO]Spider blog.sina.com.cn closed! 1 pages downloaded.

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<!-- CSND -->
+	<spider-cofig>
+		<domain>blog.csdn.net</domain>
+		<charset>utf-8</charset>
+		<!--//博客域名: 用于匹配博客spider配置 -->
+		<name>csdn.net</name>
+		<!--//博客url的内容标志域 -->
+		<blog-flag>/article/details/</blog-flag>
+		<!--//获取链接表达式 -->
+		<link-xpath>
+			<links-xpath><![CDATA[//div[@class='article-list']/div[@class='article-item-box csdn-tracking-statistics']/h4/a/@href]]></links-xpath>
+			<titles-xpath><![CDATA[//div[@class='article-list']/div[@class='article-item-box csdn-tracking-statistics']/h4/a/text()]]></titles-xpath>
+		</link-xpath>
+		<!--//获取文章表达式 -->
+		<article-xpath>
+			<content-xpath><![CDATA[//*[@id="article_content"]/div/html()]]></content-xpath>
+			<title-xpath><![CDATA[//*[@id="mainBox"]/main/div[1]/div[1]/h1/text()]]></title-xpath>
+			<tags-xpath><![CDATA[//*[@id="mainBox"]/main/div[1]/div[3]/div[3]/a/text()]]></tags-xpath>
+		</article-xpath>
+		<!--//列表页url过滤表达式 -->
+		<page-links-rex><![CDATA[/article/list/\d+]]></page-links-rex>
+	</spider-cofig>
+
+	<!-- ITeye -->
+	<spider-cofig>
+		<domain>www.iteye.com</domain>
+		<charset>utf-8</charset>
+		<!--//博客域名: 用于匹配博客spider配置 -->
+		<name>iteye.com</name>
+		<!--//博客url的内容标志域 -->
+		<blog-flag>/blog/</blog-flag>
+		<!--//获取链接表达式 -->
+		<link-xpath>
+			<links-xpath><![CDATA[//div[@class='blog_main']/div[@class='blog_title']/h3/a/@href]]></links-xpath>
+			<titles-xpath><![CDATA[//div[@class='blog_main']/div[@class='blog_title']/h3/a/text()]]></titles-xpath>
+		</link-xpath>
+		<!--//获取文章表达式 -->
+		<article-xpath>
+			<content-xpath><![CDATA[//div[@class='blog_content']/html()]]></content-xpath>
+			<title-xpath><![CDATA[//div[@class='blog_main']/div[@class='blog_title']/h3/a/text()]]></title-xpath>
+			<tags-xpath><![CDATA[//div[@class='news_tag']/a/text()]]></tags-xpath>
+		</article-xpath>
+		<!--//列表页url过滤表达式 -->
+		<page-links-rex><![CDATA[/\?page=\d+]]></page-links-rex>
+	</spider-cofig>
+
+	<!-- Cnblog -->
+	<spider-cofig>
+		<domain>www.cnblogs.com</domain>
+		<charset>utf-8</charset>
+		<!--//博客域名: 用于匹配博客spider配置 -->
+		<name>cnblogs.com</name>
+		<!--//博客url的内容标志域 -->
+		<blog-flag>/p/|/archive/</blog-flag>
+		<!--//获取链接表达式 -->
+		<link-xpath>
+			<links-xpath><![CDATA[//div[@class='postTitle']/a/@href]]></links-xpath>
+			<titles-xpath><![CDATA[//div[@class='postTitle']/a/text()]]></titles-xpath>
+		</link-xpath>
+		<!--//获取链接表达式 -->
+		<link-xpath>
+			<links-xpath><![CDATA[//div[@class='post']/h2/a/@href]]></links-xpath>
+			<titles-xpath><![CDATA[//div[@class='post']/h2/a/text()]]></titles-xpath>
+		</link-xpath>
+		<!--//获取文章表达式 -->
+		<article-xpath>
+			<content-xpath><![CDATA[//div[@id='cnblogs_post_body']/html()]]></content-xpath>
+			<title-xpath><![CDATA[//a[@id='cb_post_title_url']/text()]]></title-xpath>
+			<tags-xpath><![CDATA[//div[@id='EntryTagad']/a/text()]]></tags-xpath>
+		</article-xpath>
+		<!--//获取文章表达式 -->
+		<article-xpath>
+			<content-xpath><![CDATA[//div[@id='cnblogs_post_body']/html()]]></content-xpath>
+			<title-xpath><![CDATA[//div[@class='post']/h2/a/text()]]></title-xpath>
+			<tags-xpath><![CDATA[//div[@id='EntryTagad']/a/text()]]></tags-xpath>
+		</article-xpath>
+		<!--//列表页url过滤表达式 -->
+		<page-links-rex><![CDATA[/default\.aspx\?page=\d+]]></page-links-rex>
+		<page-links-rex><![CDATA[/default\.html\?page=\d+]]></page-links-rex>
+	</spider-cofig>
+
+	<!-- 51CTO -->
+	<spider-cofig>
+		<domain>blog.51cto.com</domain>
+		<!--//博客域名: 用于匹配博客spider配置 -->
+		<name>51cto.com</name>
+		<charset>gb2312</charset>
+		<!--//博客url的内容标志域 -->
+		<blog-flag>/\d+/</blog-flag>
+		<!--//获取链接表达式 -->
+		<link-xpath>
+			<links-xpath><![CDATA[//div[@class='blogList']/div[@class='artHead']/div/h3[@class='artTitle']/a/@href]]></links-xpath>
+			<titles-xpath><![CDATA[//div[@class='blogList']/div[@class='artHead']/div/h3[@class='artTitle']/a/text()]]></titles-xpath>
+		</link-xpath>
+		<!--//获取文章表达式 -->
+		<article-xpath>
+			<content-xpath><![CDATA[//div[@class='showContent']/html()]]></content-xpath>
+			<title-xpath><![CDATA[//div[@class='showTitleBOx']/div[@class='showTitle']/text()]]></title-xpath>
+			<tags-xpath><![CDATA[//div[@class='showTags']/a/text()]]></tags-xpath>
+		</article-xpath>
+		<!--//列表页url过滤表达式 -->
+		<page-links-rex><![CDATA[/\d+/p-\d+]]></page-links-rex>
+	</spider-cofig>
+
+	<!-- jianshu.com -->
+	<spider-cofig>
+		<domain>www.jianshu.com</domain>
+		<charset>utf-8</charset>
+		<!--//博客域名: 用于匹配博客spider配置 -->
+		<name>jianshu.com</name>
+		<!--//博客url的内容标志域 -->
+		<blog-flag>/p/</blog-flag>
+		<!--//获取链接表达式 -->
+		<link-xpath>
+			<links-xpath><![CDATA[//div[@class='content']/a/@href]]></links-xpath>
+			<titles-xpath><![CDATA[//div[@class='content']/a/text()]]></titles-xpath>
+		</link-xpath>
+		<!--//获取文章表达式 -->
+		<article-xpath>							
+			<content-xpath><![CDATA[/html/body/div[1]/div[1]/div[1]/div[2]/html()]]></content-xpath>
+			<title-xpath><![CDATA[/html/body/div[1]/div[1]/div[1]/h1/html()]]></title-xpath>
+			<tags-xpath><![CDATA[//div[@class='tag2box']/a/text()]]></tags-xpath>
+		</article-xpath>
+		<!--//列表页url过滤表达式 -->
+		<page-links-rex><![CDATA[/?order_by=shared_at&page=]]></page-links-rex>
+	</spider-cofig>
+	
+	<!-- sina.com -->
+	<spider-cofig>
+		<domain>blog.sina.com.cn</domain>
+		<charset>utf-8</charset>
+		<!--//博客域名: 用于匹配博客spider配置 -->
+		<name>sina.com</name>
+		<!--//博客url的内容标志域 -->
+		<blog-flag>/s/</blog-flag>
+		<!--//获取链接表达式 -->
+		<link-xpath>
+			<links-xpath><![CDATA[//div[@class="blog_title"]/a/@href]]></links-xpath>
+			<titles-xpath><![CDATA[//div[@class="blog_title"]/a/text()]]></titles-xpath>
+		</link-xpath>
+		<!--//获取文章表达式 -->
+		<article-xpath>							
+			<content-xpath><![CDATA[//*[@id="sina_keyword_ad_area2"]/html()]]></content-xpath>
+			<title-xpath><![CDATA[//*[@id="articlebody"]/div[1]/h2/html()]]></title-xpath>
+			<tags-xpath><![CDATA[//*[@id="sina_keyword_ad_area"]/table/tbody/tr/td[1]/h3/a/text()]]></tags-xpath>
+		</article-xpath>
+		<!--//列表页url过滤表达式 -->
+		<page-links-rex><![CDATA[/?order_by=shared_at&page=]]></page-links-rex>
+	</spider-cofig>
+</config>
