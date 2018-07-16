@@ -13,5 +13,9 @@
 
 	<modules>
 		<module>../sirzc-util</module>
+		
+		
+		
+		<module>../sirzc-core</module>
 	</modules>
 </project>

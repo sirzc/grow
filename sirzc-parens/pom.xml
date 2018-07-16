@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>sirzc</groupId>
@@ -32,6 +32,12 @@
 			<dependency>
 				<groupId>sirzc</groupId>
 				<artifactId>sirzc-util</artifactId>
+				<version>${sirzc.version}</version>
+			</dependency>
+			<!-- 核心 -->
+			<dependency>
+				<groupId>sirzc</groupId>
+				<artifactId>sirzc-core</artifactId>
 				<version>${sirzc.version}</version>
 			</dependency>
 			<!-- hutool开源工具 -->
@@ -75,4 +81,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+  <modules>
+    <module>sirzc-core</module>
+  </modules>
 </project>
